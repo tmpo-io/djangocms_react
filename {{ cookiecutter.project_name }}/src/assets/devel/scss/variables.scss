@@ -1,0 +1,6 @@
+// Breakpoints
+
+$mobile_small: new-breakpoint(max-width 480px 12);
+$mobile: new-breakpoint(max-width 768px 12);
+$tablet: new-breakpoint(max-width 992px 12);
+$desktop: new-breakpoint(max-width 1200px 12);

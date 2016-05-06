@@ -1,0 +1,16 @@
+{{ cookiecutter.project_name }}.tmpo.io {
+    tls off # disable auto cert generation
+    prometheus 0.0.0.0:2015
+    gzip
+    proxy / {{ cookiecutter.project_name }}:8000 { 
+        proxy_header Host {host}
+        proxy_header X-Forwarded-Proto {scheme}
+        except /media /static
+    }
+    rewrite /robots.txt /static/robots.txt 
+    root /var/www/html/{{ cookiecutter.project_name }}/src
+}
+
+#domain {
+#   redir https://www.domain.es{uri}
+#}    

@@ -1,0 +1,25 @@
+---
+# Default project vars for ansible
+
+project: {{ cookiecutter.project_name }} 
+db: {{ cookiecutter.project_name }}
+repo: "{{ cookiecutter.git_repo }}"
+
+django_settings_module: "{{ cookiecutter.project_name }}.settings.prod"
+
+docker_tag: 1
+docker_image: eu.gcr.io/tempo-1250/{{ cookiecutter.project_name }}
+docker_entrypoint: "gunicorn {{ cookiecutter.project_name }}.wsgi -b 0.0.0.0:8000 -w 1"
+
+build_image: false # during deploy build image on host
+pull_image: true # during deploy it will pull the docker image
+
+# If enabled creates a DO domain name on tmpo.io
+domain_name: {{ cookiecutter.project_name }}
+
+{% raw %}
+# pwd variable gets filled with current project path
+# trought bash scripts
+dump_file: "{{ pwd }}/dump.sql"
+dump_medias: "{{ pwd }}/media.tar.gz"
+{% endraw %}
