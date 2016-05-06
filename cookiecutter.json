@@ -1,4 +1,5 @@
 {
+  "git_repo": "ssh://git@repo_url.git",
   "project_name": "project",
   "languages": "es,ca,en"
 }
