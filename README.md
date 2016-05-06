@@ -1,7 +1,7 @@
-Tempo Django CMS with Cookiecutter
+Tempo Django CMS + React with Cookiecutter
 ============================
 
-A [Cookiecutter](https://github.com/audreyr/cookiecutter) template for [DjnagoCMS](https://www.django-cms.org/) and frontend tools: [Gulp](https://github.com/gulpjs/gulp), [Sass](https://github.com/sass/sass), [Backbone](https://github.com/jashkenas/backbone)
+A [Cookiecutter](https://github.com/audreyr/cookiecutter) template for [DjnagoCMS](https://www.django-cms.org/) and frontend tools: [Gulp](https://github.com/gulpjs/gulp), [Sass](https://github.com/sass/sass), [React](https://github.com/facebook/react)
 
 
 Installation and usage
@@ -28,7 +28,7 @@ Setting up the project
 
 Let's create a virtualenv inside the project dir if you aren't working with Docker
 
-    $ virtualenv env 
+    $ virtualenv env
 
 Now your virtualenv is created you sould activate in order to install the project requirements
 
@@ -55,5 +55,3 @@ Docker support
 --------------
 
 If you want to run it with Docker you can find an embedded docker image (src/Dockerfile), to run Gunicorn.
-
-
