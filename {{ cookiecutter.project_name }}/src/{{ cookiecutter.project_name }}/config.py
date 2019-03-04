@@ -16,6 +16,7 @@ import os
 import logging
 logger = logging.getLogger('configs')
 
+
 def env(var_name, default=None):
     v = os.getenv(var_name, None)
     if not v:
@@ -58,5 +59,3 @@ def get_secret(path_file, cast=None, default=''):
     if cast:
         return cast(value)
     return value
-
-
