@@ -1,7 +1,7 @@
 Tempo Django CMS + React with Cookiecutter
 ============================
 
-A [Cookiecutter](https://github.com/audreyr/cookiecutter) template for [DjnagoCMS](https://www.django-cms.org/) and frontend tools: [Gulp](https://github.com/gulpjs/gulp), [Sass](https://github.com/sass/sass), [React](https://github.com/facebook/react)
+A [Cookiecutter](https://github.com/audreyr/cookiecutter) template for [DjangoCMS](https://www.django-cms.org/) and frontend tools: [Gulp](https://github.com/gulpjs/gulp), [Sass](https://github.com/sass/sass), [React](https://github.com/facebook/react)
 
 
 Installation and usage
@@ -51,7 +51,10 @@ Now you are ready to use Django CMS! with tmpo.io configuration.
 
     $ src/manage.py runserver
 
-Docker support
+Docker Support
 --------------
 
-If you want to run it with Docker you can find an embedded docker image (src/Dockerfile), to run Gunicorn.
+If you want to run it with Docker you can simple run the commands below:
+
+    $ docker-compose build
+    $ docker-compose up

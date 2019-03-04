@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - '.:/app/'
+    command: sh -c "pip install -r src/requirements.txt && gunicorn {{ cookiecutter.project_name }}.wsgi -b 0.0.0.0:8000 -w 1"
